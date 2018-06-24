@@ -66,7 +66,7 @@
 
     <!-- Navbar (sit on top) -->
     <!-- <div class="w3-top" style="color: #777"> -->
-    <div class="w3-top" id="myNavbar" style="background-color: #fff">
+    <div class="w3-top" style="color: #999">
       <div class="w3-bar" id="myNavbar">
         <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
           <i class="fa fa-bars"></i>
@@ -139,31 +139,31 @@
       </div>
     </footer>
 
-    <!-- Add Google Maps --><!--
+    <!-- Add Google Maps -->
     <script>
-    function myMap()
-    {
-      myCenter=new google.maps.LatLng(41.878114, -87.629798);
-      var mapOptions= {
-        center:myCenter,
-        zoom:12, scrollwheel: false, draggable: false,
-        mapTypeId:google.maps.MapTypeId.ROADMAP
-      };
-      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    // function myMap()
+    // {
+    //   myCenter=new google.maps.LatLng(41.878114, -87.629798);
+    //   var mapOptions= {
+    //     center:myCenter,
+    //     zoom:12, scrollwheel: false, draggable: false,
+    //     mapTypeId:google.maps.MapTypeId.ROADMAP
+    //   };
+    //   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
-      var marker = new google.maps.Marker({
-        position: myCenter,
-      });
-      marker.setMap(map);
-    }
+    //   var marker = new google.maps.Marker({
+    //     position: myCenter,
+    //   });
+    //   marker.setMap(map);
+    // }
 
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
+    // // Modal Image Gallery
+    // function onClick(element) {
+    //   document.getElementById("img01").src = element.src;
+    //   document.getElementById("modal01").style.display = "block";
+    //   var captionText = document.getElementById("caption");
+    //   captionText.innerHTML = element.alt;
+    // }
 
     // Change style of navbar on scroll
     window.onscroll = function() {myFunction()};
@@ -186,8 +186,8 @@
         }
     }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-  -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script> -->
+ 
 
   <!-- <div class="w3-content w3-container w3-padding-64" id="skills">
     <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
