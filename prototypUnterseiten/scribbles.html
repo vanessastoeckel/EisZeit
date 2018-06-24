@@ -84,7 +84,7 @@
         <a href="../recherche.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RECHERCHE</a>
         <!-- <a href="synthese.html" class="w3-bar-item w3-button" onclick="toggleFunction()">SYNTHESE</a> -->
         <a href="../ideation.html" class="w3-bar-item w3-button">IDEATION</a>
-        <a href="../prototyp.html" class="w3-bar-item w3-button"><b>PROTOTYP</b></a>
+        <a href="../prototyp.html" class="w3-bar-item w3-button">PROTOTYP</a>
         <a href="../test.html" class="w3-bar-item w3-button">TEST</a>
       </div>
     </div>
@@ -188,12 +188,12 @@
     // }
 
     // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
+    // function onClick(element) {
+    //   document.getElementById("img01").src = element.src;
+    //   document.getElementById("modal01").style.display = "block";
+    //   var captionText = document.getElementById("caption");
+    //   captionText.innerHTML = element.alt;
+    // }
 
     // Change style of navbar on scroll
     window.onscroll = function() {myFunction()};
@@ -208,12 +208,15 @@
 
     // Used to toggle the menu on small screens when clicking on the menu button
     function toggleFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-        }
+      var x = document.getElementById("navDemo");
+      var y = document.getElementById("myNavbar");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          y.className += " w3-white";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+          y.className = y.className.replace(" w3-white", "");
+      }
     }
     </script>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script> -->
