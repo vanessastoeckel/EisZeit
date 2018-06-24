@@ -67,29 +67,28 @@
   <body>
 
     <!-- Navbar (sit on top) -->
-    <!-- <div class="w3-top" style="color: #777"> -->
-    <div class="w3-top" id="myNavbar" style="background-color: #fff">
-      <div class="w3-bar" id="myNavbar">
-        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-          <i class="fa fa-bars"></i>
-        </a>
-        <a href="home.html" class="w3-bar-item w3-button"><b>HOME</b></a>
-        <a href="recherche.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user-secret"></i> RECHERCHE</a>
-        <!-- <a href="synthese.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> SYNTHESE</a> -->
-        <a href="ideation.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> IDEATION</a>
-        <a href="prototyp.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-wrench"></i> PROTOTYP</a>
-        <a href="test.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-handshake-o"></i> TEST</a>
+    <div class="w3-top" style="color: #777">
+        <div class="w3-bar" id="myNavbar">
+          <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a href="home.html" class="w3-bar-item w3-button"><b>HOME</b></a>
+          <a href="recherche.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user-secret"></i> RECHERCHE</a>
+          <!-- <a href="synthese.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> SYNTHESE</a> -->
+          <a href="ideation.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> IDEATION</a>
+          <a href="prototyp.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-wrench"></i> PROTOTYP</a>
+          <a href="test.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-handshake-o"></i> TEST</a>
+        </div>
+  
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+          <a href="recherche.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RECHERCHE</a>
+          <!-- <a href="synthese.html" class="w3-bar-item w3-button" onclick="toggleFunction()">SYNTHESE</a> -->
+          <a href="ideation.html" class="w3-bar-item w3-button">IDEATION</a>
+          <a href="prototyp.html" class="w3-bar-item w3-button">PROTOTYP</a>
+          <a href="test.html" class="w3-bar-item w3-button">TEST</a>
+        </div>
       </div>
-
-      <!-- Navbar on small screens -->
-      <div id="navDemo.html" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-        <a href="recherche.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RECHERCHE</a>
-        <!-- <a href="synthese.html" class="w3-bar-item w3-button" onclick="toggleFunction()">SYNTHESE</a> -->
-        <a href="ideation.html" class="w3-bar-item w3-button">IDEATION</a>
-        <a href="prototyp.html" class="w3-bar-item w3-button">PROTOTYP</a>
-        <a href="test.html" class="w3-bar-item w3-button">TEST</a>
-      </div>
-    </div>
 
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container" id="home">
@@ -301,55 +300,58 @@
       </div>
     </footer>
 
-    <!-- Add Google Maps --><!--
+    <!-- Add Google Maps -->
     <script>
-    function myMap()
-    {
-      myCenter=new google.maps.LatLng(41.878114, -87.629798);
-      var mapOptions= {
-        center:myCenter,
-        zoom:12, scrollwheel: false, draggable: false,
-        mapTypeId:google.maps.MapTypeId.ROADMAP
-      };
-      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    // function myMap()
+    // {
+    //   myCenter=new google.maps.LatLng(41.878114, -87.629798);
+    //   var mapOptions= {
+    //     center:myCenter,
+    //     zoom:12, scrollwheel: false, draggable: false,
+    //     mapTypeId:google.maps.MapTypeId.ROADMAP
+    //   };
+    //   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
-      var marker = new google.maps.Marker({
-        position: myCenter,
-      });
-      marker.setMap(map);
-    }
+    //   var marker = new google.maps.Marker({
+    //     position: myCenter,
+    //   });
+    //   marker.setMap(map);
+    // }
 
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
+    // // Modal Image Gallery
+    // function onClick(element) {
+    //   document.getElementById("img01").src = element.src;
+    //   document.getElementById("modal01").style.display = "block";
+    //   var captionText = document.getElementById("caption");
+    //   captionText.innerHTML = element.alt;
+    // }
 
     // Change style of navbar on scroll
     window.onscroll = function() {myFunction()};
     function myFunction() {
         var navbar = document.getElementById("myNavbar");
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            navbar.className = "w3-bar" + " w3-animate-top" + " w3-white";
         } else {
-            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            navbar.className = navbar.className.replace(" w3-animate-top w3-white", "");
         }
     }
 
     // Used to toggle the menu on small screens when clicking on the menu button
     function toggleFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-        }
+      var x = document.getElementById("navDemo");
+      var y = document.getElementById("myNavbar");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          y.className += " w3-white";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+          y.className = y.className.replace(" w3-white", "");
+      }
     }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-  -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script> -->
+  
 
   <!-- <div class="w3-content w3-container w3-padding-64" id="skills">
     <p class="w3-large w3-center w3-padding-16">Im really good at:</p>

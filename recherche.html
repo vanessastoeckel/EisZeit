@@ -19,6 +19,10 @@
     a{
       color: #000;
     }
+    p{
+      margin-top: 0;
+      padding-top: 0;
+    }
 
     /* Create a Parallax Effect */
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
@@ -37,37 +41,36 @@
     /* Second image (Portfolio) */
     .bgimg-2 {
         background-image: url("data/research/1_Themenfindung/1_weinbau/Themenfindung_Rot.jpeg");
-        min-height: 400px;
+        min-height: 200px;
     }
 
     /* Third image (Contact) */
     .bgimg-3 {
         background-image: url("data/research/1_Themenfindung/2_hallenbad/ThemenfindungBlau.jpeg");
-        min-height: 400px;
+        min-height: 200px;
     }
 
     /* Third image (Contact) */
     .bgimg-4 {
         background-image: url("data/research/1_Themenfindung/3_eisdealer/ThemenfindungPink.jpeg");
-        min-height: 400px;
+        min-height: 200px;
     }
 
     .w3-wide {letter-spacing: 10px;}
     /* .w3-hover-opacity {cursor: pointer;} */
 
-    /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1024px) {
+    /* Turn off parallax scrolling for tablets and phones
+    /* @media only screen and (max-device-width: 1024px) {
         .bgimg-1, .bgimg-2, .bgimg-3 {
             background-attachment: scroll;
         }
-    }
+    } */
   </style>
 
   <body>
 
     <!-- Navbar (sit on top) -->
-    <!-- <div class="w3-top" style="color: #777"> -->
-    <div class="w3-top" id="myNavbar" style="background-color: #fff">
+    <div class="w3-top" style="color: #222">
       <div class="w3-bar" id="myNavbar">
         <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
           <i class="fa fa-bars"></i>
@@ -99,13 +102,16 @@
 
     <!-- Container (THEMENFINDUNG Section) -->
     <div class="w3-content w3-container w3-padding-64" id="research">
-      <h3 class="w3-center">THEMENFINDUNG</h3>
+      <h3 class="w3-center w3-padding-large">THEMENFINDUNG</h3>
       <div class="w3-row"></div>
-        <div class="w3-col m6 w3-left w3-padding-large">
-          <img src="data/research/1_Themenfindung/0_PostIts/postits.jpg" class="w3-round w3-image" width="300" height="333">
+
+
+        <div class="w3-col m5 w3-left w3-padding-large">
+          <img src="data/research/1_Themenfindung/postits.jpg" class="w3-round w3-image" width="300" height="150" style="width:100">
+
         </div>
         <!-- Hide this text on small devices -->
-        <div class="w3-col m6 w3-left w3-padding-large">
+        <div class="w3-col m7 w3-left w3-padding-large">
           <p>
             Um ein Thema zu finden, welches wir in diesem Semester bearbeiten wollen begannen wir mit einem
             Brainstorming. Hierzu pinnten wir zu jeder Idee, die uns einfiel ein Post it an eine Wand. Hierbei
@@ -126,24 +132,34 @@
 
     <!-- Container (WEINBAU Section) -->
     <div class="w3-content w3-container w3-padding-64" id="research">
-      <h3 class="w3-center">WEINBAU</h3>
+      <h3 class="w3-center w3-padding-large">INTERVIEW</h3>
       <div class="w3-row"></div>
+
         <div class="m6 w3-right w3-padding-large">
           <img src="data/research/1_Themenfindung/1_weinbau/weinbau.JPG" class="w3-round w3-image" width="400" height="400">
+
+        <div class="m6 w3-left w3-padding-large">
+          <img src="data/research/1_Themenfindung/1_weinbau/2in1.jpg" class="w3-round w3-image w3-hover-opacity" width="400" height="400">
+
         </div>
         <!-- Hide this text on small devices -->
-        <div class="w3-col m6 w3-left w3-padding-large">
+        <div class="w3-col m6 w3-left">
           <p>
             Wir führten ein mehrstündiges Interview mit einer Weinbautechnikerin, die uns sehr viele
             Informationen zur Verfügung stellte, die wir für unser Projekt und unsere Recherche
             verwenden konnten. So erfuhren wir beispielsweise, dass der Weinbau bereits sehr technisch
-            ist und in den vergangenen Jahren schon sehr modernisiert wurde. Außerdem erfuhren wir,
+            ist und in den vergangenen Jahren schon immer wieder modernisiert wurde. Außerdem erfuhren wir,
             wir das Jahr eines Winzers typischerweise aussieht und, dass nicht alle Aufgaben immer gemacht
-            werden müssen, sondern diese saisonal Bedingt sind. Ein weiterer wichtiger Punkt in unserer
-            Recherche stellte es dar, herauszufinden, wie die Weinherstellung abläuft, welche Schritte und
-            vor allem auch welche daraus resultierenden Probleme es gibt, denen sich die Winzer stellen müssen.
+            werden müssen, sondern diese saisonal Bedingt sind. Außerdem erfuhren wir, dass der Job des
+            Weinbautechnikers viele Freuden, aber auch viele Probleme mit sich bringt. Am meisten Spaß macht
+            es Brigitte, dass sie während ihrer Arbeit viel Bewegung hat und sich an der frischen Luft befindet.
+            Aber genau diese ist auch eines ihrer Probleme. Die Arbeit auf dem Weinberg ist eine Arbeit, die bei
+            Wind und Wetter gemacht werden muss.
           </p>
         </div>
+      </div>
+    <div>
+
 
         <!-- Add Google Maps -->
         <script>
@@ -187,13 +203,63 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="bgimg-3 w3-display-container w3-opacity-min"></div>
-
-      <!-- Container (SCHWIMMBAD Section) -->
     <div class="w3-content w3-container w3-padding-64" id="research">
-      <h3 class="w3-center">SCHWIMMBAD</h3>
+      <h3 class="w3-center w3-padding-large">EIN JAHR IM WEINBAU</h3>
+      <div class="w3-col m12 w3-left" style="float: right">
+        <img src="data/research/1_Themenfindung/1_weinbau/wein.jpg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;">
+        <p style="margin-bottom: 0; text-align: left" cla>
+          Das Jahr der Weinbautechnikerin beginnt typischerweise im Februar. Von Februar bis Anfang April werden
+          die Pflanzen abgebunden und gebogen. Ab April müssen diese dann mit Mineraldünger gedüngt werden,
+          sodass im Mai der Wachstum beginnen kann. Dann stehen wieder neue Aufgaben an. Die Stämme müssen geputzt
+          und die Triebe kontrolliert werden. Wächst aus einem "Auge" mehr als nur ein Trieb, so müssen alle
+          Tiebe, bis auf einen weggeschnitten werden. Außerdem muss dann gemulcht und das Gras zwischen den Reihen
+          gemäht werden. Und das immer wieder.<br/>Vom Zeitpunkt des Austriebes bis in den August hinein müssen die
+          Pflanzen auch immer wieder mit Pflanzenschutzmittel behandelt werden, sodass die Gefahr des Pilzbefalles
+          sinkt.<br/>Sobald es dann Sommer wird stehen zusätzliche Laubarbeiten an. Das bedeutet, die Pflanzen
+          werden in einen so genannten Laubhefter verpackt, einem Drahtrahmen, in dem sie gut belichtet und belüftet
+          wachsen können. Dies ist gut für die Gesundheit des Rebstockes, denn an Stellen, an denen nicht genügend
+          Luft oder Licht an die Pflanze gelangt bilden sich gerne Pilze und andere Bakterien.<br/>
+          Ab Juli etwa, werden dann die Laubhefter regelmäßig kontrolliert. Sobald die Spitzen der Austriebe über
+          den Rahmen herausragen werden diese abgeschnitten. Außerdem werden die sogenannten Traubenzonen
+          kontrolliert. Hier werden die Reben regelmäßig entblättert, sodass die Trauben nach einem Regenschauer
+          einfacher trocknen können und sich auch hier keine Pilze oder ähnliches bilden. <br/>Geht es dann wieder
+          auf den Winter zu ist es endlich so weit. Es ist Zeit, die Trauben zu ernten. Dann werden die Trauben
+          abgeschnitten und zur Kelter gebracht. Da unsere Weinbautechnikerin für die Fellbacher Weingärtner
+          arbeitet, die zweitgrößte Genossenschaft in Baden-Württemberg, hat sie bestimmte Termine, zu denen sie
+          ihre Trauben bei der Kelter abgeben muss. Sie erfährt dann einige Tage vor der Abgabe den genauen Termin
+          und muss dann schnell ernten, um rechtzeitig fertig zu werden.<br/>In der Kelter angekommen steht
+          sie dann vor einer langen Schlange. Da niemand einschätzen kann, wie lange die ablieferung der Trauben
+          für die einelnen Personen dauert, stehen die Weinbautechniker oft Stundenlang in dieser Schlange, bevor
+          sie ihre Trauben endlich abgeben können. Wenn sie dann an der Reihe sind, werden ihre Trauben gewogen
+          und deren Zuckergehalt bestimmt. Anschließend sind die Winzer an der Reihe.
+        </p>
+
+      </div>
+    <div>
+
+    <div class="w3-content w3-container w3-padding-64" id="research">
+      <h3 class="w3-center w3-padding-large">WEINHERSTELLUNG</h3>
+      <div class="w3-row"></div>
+        <div class="m6 w3-left w3-padding-large">
+          <img src="data/research/1_Themenfindung/1_weinbau/Weinherstellung.jpg" class="w3-round w3-image w3-hover-opacity" width="400" height="400">
+        </div>
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-left w3-padding-large" style=" padding-top: 0;">
+          <p>
+            Nachdem der Winzer seine Trauben von den Weinbautechnikern bekommen, diese gewogen und deren
+            Zuckergehalt in Oechsle bestimmt hat, beginnt er mit dem raspeln der Trauben, bei dem die Frucht
+            von ihrem Stiel getrennt wird.
+          </p>
+        </div>
+      </div>
+    <div>
+
+    <div class="bgimg-3 w3-display-container w3-opacity-min"></div>
+
+    <!-- Container (SCHWIMMBAD Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="research">
+      <h3 class="w3-center w3-padding-large">SCHWIMMBAD</h3>
       <div class="w3-row"></div>
         <div class="w3-col m6 w3-left w3-padding-large">
           <img src="data/research/1_Themenfindung/2_hallenbad/HallenbadBild.jpg" class="w3-round w3-image" width="500" height="333">
@@ -204,54 +270,13 @@
 
           </p>
         </div>
-       <!-- Add Google Maps -->
-        <script>
-          // Modal Image Gallery
-          function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-          }
-        </script>
-
-        <div class="w3-content w3-container w3-padding-64" id="portfolio">
-          <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-          <div class="w3-row-padding w3-center">
-            <div class="w3-col m3">
-              <img src="data/research/1_Themenfindung/1_weinbau/FotoInterview.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="data/research/1_Themenfindung/1_weinbau/Persona.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-            </div>
-
-            <div class="w3-col m3">
-              <img src="data/research/1_Themenfindung/1_weinbau/wein.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-            </div>
-
-            <div class="w3-col m3">
-              <img src="data/research/1_Themenfindung/1_weinbau/Weinherstellung.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-            </div>
-
-            <!-- Modal for full size images on click-->
-            <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-              <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
-                <i class="fa fa-remove"></i>
-              </span>
-            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent">
-              <p id="caption" class="w3-opacity w3-large"></p>
-              <img id="img01" class="w3-image" src="data/research/1_Themenfindung/1_weinbau/FotoInterview.jpg">
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
     <div class="bgimg-4 w3-display-container w3-opacity-min"></div>
     <!-- Container (EIS Section) -->
     <div class="w3-content w3-container w3-padding-64" id="research">
-        <h3 class="w3-center">EIS</h3>
+        <h3 class="w3-center w3-padding-large">Speiseeisherstellung</h3>
         <div class="w3-row"></div>
           <div class="m6 w3-right w3-padding-large">
             <img src="data/research/1_Themenfindung/3_eisdealer/eisimeis.jpg" class="w3-round w3-image" width="400" height="333">
@@ -281,31 +306,31 @@
       </div>
     </footer>
 
-    <!-- Add Google Maps --><!--
+    <!-- Add Google Maps -->
     <script>
-    function myMap()
-    {
-      myCenter=new google.maps.LatLng(41.878114, -87.629798);
-      var mapOptions= {
-        center:myCenter,
-        zoom:12, scrollwheel: false, draggable: false,
-        mapTypeId:google.maps.MapTypeId.ROADMAP
-      };
-      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    // function myMap()
+    // {
+    //   myCenter=new google.maps.LatLng(41.878114, -87.629798);
+    //   var mapOptions= {
+    //     center:myCenter,
+    //     zoom:12, scrollwheel: false, draggable: false,
+    //     mapTypeId:google.maps.MapTypeId.ROADMAP
+    //   };
+    //   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
-      var marker = new google.maps.Marker({
-        position: myCenter,
-      });
-      marker.setMap(map);
-    }
+    //   var marker = new google.maps.Marker({
+    //     position: myCenter,
+    //   });
+    //   marker.setMap(map);
+    // }
 
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
+    // // Modal Image Gallery
+    // function onClick(element) {
+    //   document.getElementById("img01").src = element.src;
+    //   document.getElementById("modal01").style.display = "block";
+    //   var captionText = document.getElementById("caption");
+    //   captionText.innerHTML = element.alt;
+    // }
 
     // Change style of navbar on scroll
     window.onscroll = function() {myFunction()};
@@ -320,16 +345,19 @@
 
     // Used to toggle the menu on small screens when clicking on the menu button
     function toggleFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-        }
+      var x = document.getElementById("navDemo");
+      var y = document.getElementById("myNavbar");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          y.className += " w3-white";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+          y.className = y.className.replace(" w3-white", "");
+      }
     }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-  -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script> -->
+
 
   <!-- <div class="w3-content w3-container w3-padding-64" id="skills">
     <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
