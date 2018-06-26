@@ -25,7 +25,7 @@
     }
 
     /* Create a Parallax Effect */
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
         background-attachment: fixed;
         /* background-position: center; */
         background-repeat: no-repeat;
@@ -61,6 +61,11 @@
         background-image: url("data/EisZeit_Fotos/Eisdiele/3.jpg");
         min-height: 300px;
     }
+    /*Fivth image (EIS)*/
+    .bgimg-6 {
+        background-image: url("data/EisZeit_Fotos/hejakfsc,y");
+        min-height: 100px;
+    }
 
     .w3-wide {letter-spacing: 10px;}
     /* .w3-hover-opacity {cursor: pointer;} */
@@ -83,6 +88,7 @@
         </a>
         <a href="home.html" class="w3-bar-item w3-button">HOME</a>
         <a href="recherche.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user-secret"></i><b> RECHERCHE</b></a>
+        <a href="empathy.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-heart"></i> EMPATHIZE</a>
         <!-- <a href="synthese.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> SYNTHESE</a> -->
         <a href="ideation.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> IDEATION</a>
         <a href="prototyp.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-wrench"></i> PROTOTYP</a>
@@ -92,6 +98,7 @@
       <!-- Navbar on small screens -->
       <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
         <a href="recherche.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><b>RECHERCHE</b></a>
+        <a href="empathy.html" class="w3-bar-item w3-button" onclick="toggleFunction()">EMPATHIZE</a>
         <!-- <a href="synthese.html" class="w3-bar-item w3-button" onclick="toggleFunction()">SYNTHESE</a> -->
         <a href="ideation.html" class="w3-bar-item w3-button">IDEATION</a>
         <a href="prototyp.html" class="w3-bar-item w3-button">PROTOTYP</a>
@@ -456,7 +463,7 @@
       <h3 class="w3-center w3-padding-large">HERSTELLUNG</h3>
       <div class="w3-col m12 w3-left" style="float: right">
         <img src="data/research/1_Themenfindung/3_eisdealer/Herstellung.jpeg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;">
-        <p style="text-align: left">
+        <p style="text-align: left; margin-bottom: 64px;">
           Unser drittes und letztes Interview führen wir mit Beate. Sie begann bereits vor vielen Jahren 
           mit der Arbeit im Badebetrieb Schwäbisch Gmünd. Damals war es eine Notlösung, dort anzufangen, sie 
           suchte einen Halbtagsjob und so wurde sie Reinigungskraft im Schwimmbadbetrieb. Sie liebt das Putzen 
@@ -471,28 +478,35 @@
       </div>
     </div>
 
-    <div class="bgimg-5 w3-display-container w3-opacity-min"></div>
-    <div class="w3-content w3-container w3-padding-64" id="BEATE">
+    <div class="bgimg-5 w3-display-container w3-opacity-min w3-padding-64" style="padding-bottom: 64px"></div>
+    <div class="w3-content w3-container w3-padding-64" id="entscheidung">
       <h3 class="w3-center w3-padding-large">ENTSCHEIDUNG</h3>
       <div class="w3-col m12 w3-right" style="float: left">
-        <img src="data/research/1_Themenfindung/3_eisdealer/Geraete.jpeg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;">
-        <p style="text-align: left">
-          Unser drittes und letztes Interview führen wir mit Beate. Sie begann bereits vor vielen Jahren 
-          mit der Arbeit im Badebetrieb Schwäbisch Gmünd. Damals war es eine Notlösung, dort anzufangen, sie 
-          suchte einen Halbtagsjob und so wurde sie Reinigungskraft im Schwimmbadbetrieb. Sie liebt das Putzen 
-          und mag die Sauberkeit, weshalb sie an jedem Teil ihres Jobs Freude hat. Von ihr erfahren wir, dass 
-          es wichtig ist, für alles getrennte Lappen zu verwenden und die seit Jahren bestehende Routine 
-          einzuhalten, nach der sie schon seit über 20 Jahren so putzen. So stehen beispielsweise morgens als 
-          erstes die Toiletten und Umkleidekabinen an, bevor die Kunden kommen, anschließend stehen unter anderem 
-          Schwimmhalle und Sauna auf dem Plan.<br/>Das einzige, was Beate an ihrem Job stört sind die Geräte, die 
-          ab und an kaputt gehen und die oft von Leuten in gehobeneren Positionen ausgesucht werden und für ihre 
-          eigentliche Aufgabe nicht immer optimal geeignet sind. 
+        <img src="data/research/1_Themenfindung/schwarz.jpeg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;">
+        <p style="text-align: left; margin-bottom: 0; margin-top: 0;">
+          Da der Weinbau für uns ein bereits bekanntes Thema war und wir durch unsere 
+          persönlichen Kontakte bei diesem Thema zu nah dran waren, um Gesprächspartner 
+          zu finden, die objektiv mit uns reden würden, entschieden wir uns gegen dieses 
+          Thema. Ein weiterer Aspekt war die andauernde Modernisierung diesen Gebietes, 
+          durch die wir es als schwierig erachteten, relevante Probleme zu finden.<br/>
+          Nun mussten wir uns also nur noch zwischen den Themen Eis und Bäderbetriebe 
+          entscheiden. Uns fiel diese Entscheidung nicht einfach, doch letztendlich 
+          entschieden wir uns für die Speiseeisherstellung, da wir zu diesem Thema die 
+          meisten Ideen hatten und auch die meisten Probleme dort fanden. Außerdem schien 
+          es sich schwierig zu gestalten in den Bäderbetrieben Ansprechpartner zu finden, 
+          die uns dauerhaft zur Seite stehen konnten, was sich bei den Eisdielen als 
+          einfacher erwies.<br/>Da wir uns also für die Herstellung von Speiseeis entschieden 
+          hatten, vertieften wir unsere Recherche auf diesem Bereich noch weiter. 
         </p>
+        <a href="empathy.html" class="img" style="text-decoration: none; padding-top: 0; margin-top: 0;">
+          <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">MEHR DAZU LESEN</button>
+        </a>
       </div>
     </div>
+    <div class="bgimg-6 w3-display-container w3-opacity-min w3-padding-64" style="padding-bottom: 64px"></div>
 
     <!-- Footer -->
-   <footer class="w3-center w3-black" style="padding: 8px 0 8px 0 ; margin-bottom: 0">
+   <footer class="w3-center w3-black w3-padding-large" style="padding: 8px 0 8px 0 ; margin-bottom: 0">
       <!-- <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a> -->
       <div class="w3-xlarge w3-section">
           <p style="font-size: 0.8em; font-weight: 100">Check out our portfolios!</p>

@@ -6,10 +6,11 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
   <style>
      body,h1,h2,h3, a {font-family: "Quicksand", sans-serif;}
-    body,p {font-family: "source sans pro", sans-serif;}
+    body,p {font-family: "source sans pro", sans-serif;
+    font-size: 1.1em;}
     body, html {
         height: 100%;
         color: #000;
@@ -29,7 +30,7 @@
 
     /* First image (Logo. Full height) */
     .bgimg-1 {
-        background-image: url('data/synthese.jpg');
+        background-image: url('data/research/IMG.jpg');
         min-height: 100%;
     }
 
@@ -65,14 +66,15 @@
   <body>
 
     <!-- Navbar (sit on top) -->
-    <div class="w3-top" style="color: #999">
+    <!-- <div class="w3-top" style="color: #777"> -->
+    <div class="w3-top" style="color: #222">
       <div class="w3-bar" id="myNavbar">
         <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
           <i class="fa fa-bars"></i>
         </a>
         <a href="home.html" class="w3-bar-item w3-button">HOME</a>
-        <a href="recherche.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user-secret"></i> RECHERCHE</a>
-        <a href="empathy.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-heart"></i> EMPATHIZE</a>
+        <a href="recherche.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user-secret"></i>RECHERCHE</a>
+        <a href="empathy.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-heart"></i> <b>EMPATHIZE</b></a>
         <!-- <a href="synthese.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> SYNTHESE</a> -->
         <a href="ideation.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> IDEATION</a>
         <a href="prototyp.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-wrench"></i> PROTOTYP</a>
@@ -83,8 +85,8 @@
       <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
         <a href="recherche.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RECHERCHE</a>
         <a href="empathy.html" class="w3-bar-item w3-button" onclick="toggleFunction()">EMPATHIZE</a>
-        <a href="synthese.html" class="w3-bar-item w3-button" onclick="toggleFunction()">SYNTHESE</a>
-        <a href="ideation.html" class="w3-bar-item w3-button">IDEATION</a>
+        <!-- <a href="synthese.html" class="w3-bar-item w3-button" onclick="toggleFunction()">SYNTHESE</a> -->
+        <a href="ideation.html" class="w3-bar-item w3-button"><b>IDEATION</b></a>
         <a href="prototyp.html" class="w3-bar-item w3-button">PROTOTYP</a>
         <a href="test.html" class="w3-bar-item w3-button">TEST</a>
       </div>
@@ -93,7 +95,7 @@
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container" id="home">
       <div class="w3-display-middle" style="white-space:nowrap;">
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Recherche</span>
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">RECHERCHE EIS</span>
       </div>
     </div>
 
@@ -101,10 +103,10 @@
     <div class="w3-content w3-container w3-padding-64" id="home">
       <h3 class="w3-center">Recherche</h3>
       <!-- <p class="w3-center"><em>I love photography</em></p> -->
-      <p>Ist es nicht nervig? Du möchtest dir einfach nur ein Eis kaufen. Und dann das! Eine drei Meter lange Schlange 
-        vor der Eisdiele. Da hat man doch gleich gar keine Lust mehr auf Eis. Und genau dieses Problem löst EisZeit 
-        jetzt für dich. Mit EisZeit kannst du ganz einfach Eisdielen finden, deren Sortiment vorab einsehen und jetzt 
-        schon in der Lieblingseisdiele dein personalisiertes Eis vorbestellen! So verhinderst du, dass du vor dem Kauf 
+      <p>Ist es nicht nervig? Du möchtest dir einfach nur ein Eis kaufen. Und dann das! Eine drei Meter lange Schlange
+        vor der Eisdiele. Da hat man doch gleich gar keine Lust mehr auf Eis. Und genau dieses Problem löst EisZeit
+        jetzt für dich. Mit EisZeit kannst du ganz einfach Eisdielen finden, deren Sortiment vorab einsehen und jetzt
+        schon in der Lieblingseisdiele dein personalisiertes Eis vorbestellen! So verhinderst du, dass du vor dem Kauf
         noch lange in der Warteschlange stehen musst.
       </p>
     </div>
@@ -114,7 +116,7 @@
       <h3 class="w3-center">RECHERCHE</h3>
       <div class="w3-row"></div>
         <div class="m6 w3-right w3-padding-large">
-          <img src="data/recherche.jpg" class="w3-round w3-image w3-hover-opacity" width="500" height="333">
+          <img src="data/recherche.jpg" class="w3-round w3-image" width="500" height="333">
         </div>
 
         <!-- Hide this text on small devices -->
@@ -127,7 +129,7 @@
     </div>
 
     <!-- Footer -->
-   <footer class="w3-center w3-black w3-hover-opacity" style="padding: 8px 0 8px 0 ; margin-bottom: 0">
+   <footer class="w3-center w3-black" style="padding: 8px 0 8px 0 ; margin-bottom: 0">
       <!-- <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a> -->
       <div class="w3-xlarge w3-section">
           <p style="font-size: 0.8em; font-weight: 100">Check out our portfolios!</p>
@@ -155,21 +157,20 @@
     // Used to toggle the menu on small screens when clicking on the menu button
     function toggleFunction() {
       var x = document.getElementById("navDemo");
-      var y = document.getElementById("myNavbar");
-      if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-          y.className += " w3-white";
-      } else {
-          x.className = x.className.replace(" w3-show", "");
-          y.className = y.className.replace(" w3-white", "");
-      }
+        var y = document.getElementById("myNavbar");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            y.className += " w3-white";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            y.className = y.className.replace(" w3-white", "");
+        }
     }
     </script>
     <!--
     To use this code on your website, get a free API key from Google.
     Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
     -->
-  
+
   </body>
 </html>
-
