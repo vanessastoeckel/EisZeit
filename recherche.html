@@ -78,6 +78,26 @@
     } */
   </style>
 
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
+      <i class="fa fa-remove"></i>
+    </span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent">
+      <p id="caption" class="w3-opacity w3-large"></p>
+      <img id="img01" class="w3-image" src="data/research/1_Themenfindung/1_weinbau/FotoInterview.jpg">
+    </div>
+  </div>
+
   <body>
 
     <!-- Navbar (sit on top) -->
@@ -117,11 +137,8 @@
     <div class="w3-content w3-container w3-padding-64" id="research">
       <h3 class="w3-center w3-padding-large">THEMENFINDUNG</h3>
       <div class="w3-row"></div>
-
-
         <div class="w3-col m5 w3-left w3-padding-large">
-          <img src="data/research/1_Themenfindung/postits.jpg" class="w3-round w3-image" width="300" height="150" style="width:100">
-
+          <img src="data/research/1_Themenfindung/postits.jpg" class="w3-round w3-image" width="300" height="150" style="width:100" onclick="onClick(this)" alt="Post-it's Themenfindung">
         </div>
         <!-- Hide this text on small devices -->
         <div class="w3-col m7 w3-left w3-padding-large">
@@ -145,9 +162,9 @@
 
     <!-- Container (WEINBAU Section) -->
     <div class="w3-content w3-container w3-padding-64" id="Interview">
-      <h3 class="w3-center w3-padding-large">EIN JAHR IM WEINBAU</h3>
+      <h3 class="w3-center w3-padding-large">INTERVIEW MIT EINER WEINBAUTECHNIKERIN</h3>
       <div class="w3-col m12 w3-left" style="float: left">
-        <img src="data/research/1_Themenfindung/1_weinbau/2in1.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;">
+        <img src="data/research/1_Themenfindung/1_weinbau/2in1.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;" onclick="onClick(this)" alt="Persona Interview">
         <p style="text-align: left">
           Wir führten ein mehrstündiges Interview mit einer Weinbautechnikerin, die uns sehr viele
           Informationen zur Verfügung stellte, die wir für unser Projekt und unsere Recherche
@@ -167,7 +184,7 @@
     <div class="w3-content w3-container w3-padding-64" id="weinjahr">
       <h3 class="w3-center w3-padding-large">EIN JAHR IM WEINBAU</h3>
       <div class="w3-col m12 w3-left" style="float: right">
-        <img src="data/research/1_Themenfindung/1_weinbau/wein.jpg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;">
+        <img src="data/research/1_Themenfindung/1_weinbau/wein.jpg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;" onclick="onClick(this)" alt="Ein Jahr im Weinbau">
         <p style="text-align: left">
           Das Jahr der Weinbautechnikerin beginnt typischerweise im Februar. Von Februar bis Anfang April werden 
           die Pflanzen abgebunden und gebogen. Ab April müssen diese dann mit Mineraldünger gedüngt werden, 
@@ -200,7 +217,7 @@
     <div class="w3-content w3-container w3-padding-64" id="herstellung">
       <h3 class="w3-center w3-padding-large">WEINHERSTELLUNG</h3>
       <div class="w3-col m5 w3-left">
-        <img src="data/research/1_Themenfindung/1_weinbau/Weinherstellung.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%; margin-bottom: 64px">
+        <img src="data/research/1_Themenfindung/1_weinbau/Weinherstellung.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%; margin-bottom: 64px" onclick="onClick(this)" alt="Weinherstellung">
       </div> 
       <div class="w3-col m7 w3-right">
         <p style="text-align: left">
@@ -230,7 +247,7 @@
     <div class="w3-content w3-container w3-padding-64" id="research">
       <h3 class="w3-center w3-padding-large">SCHWIMMBAD</h3>
       <div class="w3-col m12 w3-right" style="float: left">
-        <img src="data/research/1_Themenfindung/2_hallenbad/HallenbadBild.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;">
+        <img src="data/research/1_Themenfindung/2_hallenbad/HallenbadBild.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;" onclick="onClick(this)" alt="Schwimmbad - Foto von Matteo Wiesheu">
         <p style="text-align: left">
           Wir nahmen uns einen Nachmittag Zeit, um Interviews mit Mitarbeitern eines Badebetriebes zu führen. 
           Hierzu suchten wir uns das Hallenbad in Schwäbisch Gmünd aus. Wir wollten durch unser Interview vor 
@@ -245,7 +262,7 @@
     <div class="w3-content w3-container w3-padding-64" id="ANNA">
       <h3 class="w3-center w3-padding-large">INTERVIEW I – ANNA</h3>
       <div class="w3-col m12 w3-left" style="float: right">
-        <img src="data/research/1_Themenfindung/2_hallenbad/Anna.jpg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;">
+        <img src="data/research/1_Themenfindung/2_hallenbad/Anna.jpg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;" onclick="onClick(this)" alt="Interview Anna">
         <p style="text-align: left">
           Unser erstes Interview führten wir mit Anna, die heute an der Kasse arbeitet. Sie hat vor zwei Jahren 
           ihre Ausbildung angefangen und arbeitet seit September 2017 im Hallenbad in Schwäbisch Gmünd. Sie mag 
@@ -274,7 +291,7 @@
     <div class="w3-content w3-container w3-padding-64" id="NICK">
       <h3 class="w3-center w3-padding-large">INTERVIEW II – NICK</h3>
       <div class="w3-col m12 w3-right" style="float: left;">
-        <img src="data/research/1_Themenfindung/2_hallenbad/Nick.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;">
+        <img src="data/research/1_Themenfindung/2_hallenbad/Nick.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;" onclick="onClick(this)" alt="Interview Nick">
         <p style="text-align: left">
           Unser zweites Interview führen wir mit Nick. Nick war bereits in der Schule in einem Schwimmverein 
           und hat die Ausbildung zum Fachangestellten für Bäderbetriebe gemacht, um vor seinem Studium schon 
@@ -292,7 +309,7 @@
     <div class="w3-content w3-container w3-padding-64" id="BEATE">
       <h3 class="w3-center w3-padding-large">INTERVIEW III – BEATE</h3>
       <div class="w3-col m12 w3-left" style="float: right">
-        <img src="data/research/1_Themenfindung/2_hallenbad/Beate.jpg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;">
+        <img src="data/research/1_Themenfindung/2_hallenbad/Beate.jpg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;" onclick="onClick(this)" alt="Interview Beate">
         <p style="text-align: left">
           Unser drittes und letztes Interview führen wir mit Beate. Sie begann bereits vor vielen Jahren 
           mit der Arbeit im Badebetrieb Schwäbisch Gmünd. Damals war es eine Notlösung, dort anzufangen, sie 
@@ -311,7 +328,7 @@
     <div class="w3-content w3-container w3-padding-64" id="research">
       <h3 class="w3-center w3-padding-large">PERSONAS</h3>
       <div class="w3-col m12 w3-right" style="float: left">
-        <img src="data/research/1_Themenfindung/2_hallenbad/IMG_1646.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;">
+        <img src="data/research/1_Themenfindung/2_hallenbad/IMG_1646.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;" onclick="onClick(this)" alt="Personas Hallenbad">
         <p style="text-align: left">
           Nachdem wir so viele Interviews geführt hatten, wie es uns an diesem Tag möglich war, setzten wir uns daran, 
           unsere gewonennen Erkenntnisse auszuarbeiten und zu visualisieren. Hierzu erstellten wir Personas zu den 
@@ -326,7 +343,7 @@
     <div class="w3-content w3-container w3-padding-64" id="research">
       <h3 class="w3-center w3-padding-large">WEITERE RECHERCHEN</h3>
       <div class="w3-col m12 w3-left" style="float: right">
-        <img src="data/research/1_Themenfindung/2_hallenbad/Hallenbad2.JPG" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;">
+        <img src="data/research/1_Themenfindung/2_hallenbad/Hallenbad2.JPG" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;" onclick="onClick(this)" alt="Weitere Recherchen – Foto von Matteo Wiesheu">
         <p style="text-align: left">
           Wir untersuchten das Thema Hallenbad noch einmal genauer und fanden heraus, dass Bademeister, wie die 
           Fachangestellten für Bäderbetriebe umgangssprachlich genannt werden, eigentlich gar nichts mit 
@@ -345,7 +362,7 @@
     <div class="w3-content w3-container w3-padding-64" id="BEATE">
       <h3 class="w3-center w3-padding-large">SPEISEEISHERSTELLUNG</h3>
       <div class="w3-col m12 w3-right" style="float: left">
-        <img src="data/research/1_Themenfindung/3_eisdealer/Karte.png" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;">
+        <img src="data/research/1_Themenfindung/3_eisdealer/Karte.png" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;" onclick="onClick(this)" alt="Map Eisdielen">
         <p style="text-align: left">
           Um herauszufinden, wie der Arbeitsalltag von Eis Herstellern aussieht suchten wir uns zwei Eisdielen 
           in Schwäbisch Gmünd, von denen wir wussten, dass sie ihr Eis selbst herstellen. Wir besuchten die beiden 
@@ -359,7 +376,7 @@
     <div class="w3-content w3-container w3-padding-64" id="BEATE">
       <h3 class="w3-center w3-padding-large">EISMANUFAKTUR MIO</h3>
       <div class="w3-col m12 w3-left" style="float: right">
-        <img src="data/research/1_Themenfindung/3_eisdealer/Mio.jpg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;">
+        <img src="data/research/1_Themenfindung/3_eisdealer/Mio.jpg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;" onclick="onClick(this)" alt="Eismanufaktur Mio">
         <p style="text-align: left">
           Zuerst sprachen wir mit einem älteren Mann von der Eismanufaktur. Er gründete vor einigen Jahren, 
           gemeinsam mit einem Freund seine eigene Eisdiele weil er gerne Eis isst und ihm der Kundenkontakt Spaß 
@@ -392,7 +409,7 @@
     <div class="w3-content w3-container w3-padding-64" id="BEATE">
       <h3 class="w3-center w3-padding-large">EISHORN</h3>
       <div class="w3-col m12 w3-right" style="float: left">
-        <img src="data/research/1_Themenfindung/3_eisdealer/Eishorn.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="200" height="400" style="margin-right: 3%;">
+        <img src="data/research/1_Themenfindung/3_eisdealer/Eishorn.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="200" height="400" style="margin-right: 3%;" onclick="onClick(this)" alt="Eishorn">
         <p style="text-align: left">
           Im weiteren führten wir ein zweites Interview mit der Tochter des Inhabers des Eishorns, die an diesem 
           Tag Dienst hatte. Wir erfuhren, dass ihr Vater vor etwa 20 Jahren das Eishorn gründete, um zu verhindern, 
@@ -422,7 +439,7 @@
     <div class="w3-content w3-container w3-padding-64" id="BEATE">
       <h3 class="w3-center w3-padding-large">PERSONAS</h3>
       <div class="w3-col m12 w3-left" style="float: right">
-        <img src="data/research/1_Themenfindung/3_eisdealer/Persona.jpg" class="w3-round w3-image w3-hover-opacity w3-right" width="300" height="400" style="margin-left: 3%;">
+        <img src="data/research/1_Themenfindung/3_eisdealer/Persona.jpg" class="w3-round w3-image w3-hover-opacity w3-right" width="300" height="400" style="margin-left: 3%;" onclick="onClick(this)" alt="Personas">
         <p style="text-align: left">
           Nachdem wir unsere Interviews geführt hatten ging es für uns daran, die gewonnenen Informationen 
           auszuarbeiten und visuell darzustellen. Hierbei entschieden wir uns, wie auch bereits bei den 
@@ -440,7 +457,7 @@
     <div class="w3-content w3-container w3-padding-64" id="BEATE">
       <h3 class="w3-center w3-padding-large">ZUTATEN</h3>
       <div class="w3-col m12 w3-right" style="float: left">
-        <img src="data/research/1_Themenfindung/3_eisdealer/Zutaten.jpeg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;">
+        <img src="data/research/1_Themenfindung/3_eisdealer/Zutaten.jpeg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;" onclick="onClick(this)" alt="Zutaten">
         <p style="text-align: left">
           Wie in jeder Branche gibt es auch in der Eis Branche Unterschiede in der Herstellung, der Rezeptfindung und 
           der Beschffung der Zutaten. So kann man beispielsweise beim letzten genannten Punkt sehen, dass der 
@@ -456,7 +473,7 @@
     <div class="w3-content w3-container w3-padding-64" id="BEATE">
       <h3 class="w3-center w3-padding-large">REZEPTE</h3>
       <div class="w3-col m12 w3-left" style="float: right">
-        <img src="data/research/1_Themenfindung/3_eisdealer/Rezepte.jpeg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;">
+        <img src="data/research/1_Themenfindung/3_eisdealer/Rezepte.jpeg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;" onclick="onClick(this)" alt="Rezepte">
         <p style="text-align: left">
           In der Rezeptfindung gibt es hauptsächlich Unterschiede in der Anzahl der Rezepte. So hat beispielsweise 
           das Eishorn ca 30 Rezepte für Eis, während die Eismanufaktur ganze 150 verschiedene Rezepte hat. Von 
@@ -473,7 +490,7 @@
     <div class="w3-content w3-container w3-padding-64" id="BEATE">
       <h3 class="w3-center w3-padding-large">GERÄTE & HERSTELLUNG</h3>
       <div class="w3-col m12 w3-right" style="float: left">
-        <img src="data/research/1_Themenfindung/3_eisdealer/Geraete.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;">
+        <img src="data/research/1_Themenfindung/3_eisdealer/Geraete.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;" onclick="onClick(this)" alt="Geräte & Herstellung">
         <p style="text-align: left">
           Bei der Eisherstellung haben alle von uns befragten Eisdielen die selben Geräte verwendet. Eine Wage, 
           einen Mixer und eine professionelle Eismaschine. Mit der Wage werden die Zutaten zu richigen Portionen
@@ -503,7 +520,7 @@
     <div class="w3-content w3-container w3-padding-64" id="entscheidung">
       <h3 class="w3-center w3-padding-large">ENTSCHEIDUNG</h3>
       <div class="w3-col m12 w3-right" style="float: left">
-        <img src="data/research/1_Themenfindung/schwarz.jpeg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;">
+        <img src="data/research/1_Themenfindung/schwarz.jpeg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;" onclick="onClick(this)" alt="Übersicht Themen schwarz – Entscheidung">
         <p style="text-align: left; margin-bottom: 0; margin-top: 0;">
           Da der Weinbau für uns ein bereits bekanntes Thema war und wir durch unsere 
           persönlichen Kontakte bei diesem Thema zu nah dran waren, um Gesprächspartner 

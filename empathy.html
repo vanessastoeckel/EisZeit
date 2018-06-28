@@ -51,6 +51,26 @@
     }
   </style>
 
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
+      <i class="fa fa-remove"></i>
+    </span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent">
+      <p id="caption" class="w3-opacity w3-large"></p>
+      <img id="img01" class="w3-image" src="data/research/1_Themenfindung/1_weinbau/FotoInterview.jpg">
+    </div>
+  </div>
+
   <body>
 
     <!-- Navbar (sit on top) -->
@@ -91,7 +111,7 @@
     <div class="w3-content w3-container w3-padding-64" id="pitch">
       <h3 class="w3-center w3-padding-large">ELEVATOR PITCH</h3>
       <div class="w3-col m12 w3-right" style="float: left">
-        <img src="data/research/2_Research/0_ElevatorPitch/Rollenspiel.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;">
+        <img src="data/research/2_Research/0_ElevatorPitch/Rollenspiel.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;" onclick="onClick(this)" alt="Elevator Pitch">
         <p style="text-align: left;">
           Den Elevator Pitch, der im Unterricht stattfand nutzten wir, um unser erarbeitetes Wissen in neue 
           Ideen zu verwandeln. Wir zeichneten storyboards, erste Screens, bauten roughe Prototypen und sammelten 
@@ -108,7 +128,7 @@
     <div class="w3-content w3-container w3-padding-64" id="BEATE">
       <h3 class="w3-center w3-padding-large">EMPATHY MAPS</h3>
       <div class="w3-col m12 w3-left" style="float: right">
-        <img src="data/research/2_Research/1_EmpathyMap/EmpathyEishorn.jpeg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;">
+        <img src="data/research/2_Research/1_EmpathyMap/EmpathyEishorn.jpeg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;" onclick="onClick(this)" alt="Empathy Map Eishorn">
         <p style="text-align: left">
           Um unsere Kunden besser verstehen zu können erarbeiteten wir Empathy Maps, welche uns weitere 
           Einblicke in das Alltagsleben der Ice-Creamisten ermöglichte. Außerdem stellten die Empathy Maps 
@@ -127,7 +147,7 @@
     <div class="w3-content w3-container w3-padding-64" id="pitch">
       <h3 class="w3-center w3-padding-large">CULTURAL PROBES</h3>
       <div class="w3-col m12 w3-right" style="float: left">
-        <img src="data/research/2_Research/2_CulturalProbes/IMG_1898.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;">
+        <img src="data/research/2_Research/2_CulturalProbes/IMG_1898.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;" onclick="onClick(this)" alt="Cultural Probes">
         <p style="text-align: left">
           In der Rezeptfindung gibt es hauptsächlich Unterschiede in der Anzahl der Rezepte. So hat beispielsweise 
           das Eishorn ca 30 Rezepte für Eis, während die Eismanufaktur ganze 150 verschiedene Rezepte hat. Von 
@@ -150,7 +170,7 @@
     <div class="w3-content w3-container w3-padding-64" id="BEATE">
       <h3 class="w3-center w3-padding-large">ZUSÄTZLICHE RECHERCHEN</h3>
       <div class="w3-col m12 w3-left" style="float: right">
-        <img src="data/research/2_Research/3_zusaetzlicheResearch/6.jpg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;">
+        <img src="data/research/2_Research/3_zusaetzlicheResearch/6.jpg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;" onclick="onClick(this)" alt="Zusätzliche Recherchen">
         <p style="text-align: left">
           In der Rezeptfindung gibt es hauptsächlich Unterschiede in der Anzahl der Rezepte. So hat beispielsweise 
           das Eishorn ca 30 Rezepte für Eis, während die Eismanufaktur ganze 150 verschiedene Rezepte hat. Von 
@@ -173,7 +193,7 @@
     <div class="w3-content w3-container w3-padding-64" id="pitch" style="margin-bottom: 64px;">
       <h3 class="w3-center w3-padding-large">STORYBOARDS & INTERVIEWS</h3>
       <div class="w3-col m12 w3-right" style="float: left">
-        <img src="data/research/2_Research/4_Storyboards/story.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;">
+        <img src="data/research/2_Research/4_Storyboards/story.jpg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;" onclick="onClick(this)" alt="Storyboards & Interviews">
         <p style="text-align: left">
           In der Rezeptfindung gibt es hauptsächlich Unterschiede in der Anzahl der Rezepte. So hat beispielsweise 
           das Eishorn ca 30 Rezepte für Eis, während die Eismanufaktur ganze 150 verschiedene Rezepte hat. Von 
@@ -198,10 +218,10 @@
       <div class="w3-xlarge w3-section">
           <p style="font-size: 0.8em; font-weight: 100">Check out our portfolios!</p>
           <a href="http://marinarost.de/" class="img" target="_blank" style="text-decoration: none">
-            <img src="data/contact/Marina.jpeg" class="w3-round w3-image w3-hover-opacity" width="50" height="333">
+            <img src="data/contact/Marina.jpeg" class="w3-round w3-image w3-hover-opacity" width="50" height="333" onclick="onClick(this)" alt="Empathy Map Eishorn">
           </a>
           <a href="https://vanessastoeckel.de/" class="img" target="_blank">
-            <img src="data/contact/Vanessa.jpg" class="w3-round w3-image w3-hover-opacity" width="50" height="333">
+            <img src="data/contact/Vanessa.jpg" class="w3-round w3-image w3-hover-opacity" width="50" height="333" onclick="onClick(this)" alt="Empathy Map Eishorn">
           </a>
       </div>
     </footer>

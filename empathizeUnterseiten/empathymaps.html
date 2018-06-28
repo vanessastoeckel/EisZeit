@@ -63,6 +63,26 @@
     }
   </style>
 
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
+      <i class="fa fa-remove"></i>
+    </span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent">
+      <p id="caption" class="w3-opacity w3-large"></p>
+      <img id="img01" class="w3-image" src="data/research/1_Themenfindung/1_weinbau/FotoInterview.jpg">
+    </div>
+  </div>
+
   <body>
 
     <!-- Navbar (sit on top) -->
@@ -103,7 +123,7 @@
     <div class="w3-content w3-container w3-padding-64" id="pitch">
       <h3 class="w3-center w3-padding-large">EISMANUFAKTUR MIO</h3>
       <div class="w3-col m12 w3-right" style="float: left">
-        <img src="../data/research/2_Research/1_EmpathyMap/EmpathyMio.jpeg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%;">
+        <img src="../data/research/2_Research/1_EmpathyMap/EmpathyMio.jpeg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin-right: 3%" onclick="onClick(this)" alt="Empathy Map Eismanufaktur Mio">
         <p style="text-align: left">
           In der Rezeptfindung gibt es hauptsächlich Unterschiede in der Anzahl der Rezepte. So hat beispielsweise 
           das Eishorn ca 30 Rezepte für Eis, während die Eismanufaktur ganze 150 verschiedene Rezepte hat. Von 
@@ -120,14 +140,13 @@
           </a>
         </div>
       </div>
-      
     </div>
 
     <!-- Container (RECHERCHE Section) -->
     <div class="w3-content w3-container w3-padding-64" id="BEATE">
       <h3 class="w3-center w3-padding-large">EISHORN</h3>
       <div class="w3-col m12 w3-left" style="float: right">
-        <img src="../data/research/2_Research/1_EmpathyMap/EmpathyEishorn.jpeg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;">
+        <img src="../data/research/2_Research/1_EmpathyMap/EmpathyEishorn.jpeg" class="w3-round w3-image w3-hover-opacity w3-right" width="400" height="400" style="margin-left: 3%;" onclick="onClick(this)" alt="Empathy Map Eishorn">
         <p style="text-align: left">
           In der Rezeptfindung gibt es hauptsächlich Unterschiede in der Anzahl der Rezepte. So hat beispielsweise 
           das Eishorn ca 30 Rezepte für Eis, während die Eismanufaktur ganze 150 verschiedene Rezepte hat. Von 

@@ -68,6 +68,26 @@
     }
   </style>
 
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
+      <i class="fa fa-remove"></i>
+    </span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent">
+      <p id="caption" class="w3-opacity w3-large"></p>
+      <img id="img01" class="w3-image" src="data/research/1_Themenfindung/1_weinbau/FotoInterview.jpg">
+    </div>
+  </div>
+
   <body>
 
     <!-- Navbar (sit on top) -->
@@ -127,7 +147,7 @@
       <div class="w3-row"></div>
         <div class="w3-col m6 w3-right w3-padding-large">
           <a href="recherche.html" class="img" style="text-decoration: none">
-          <img src="data/research/recherche.jpg" class="w3-round w3-image w3-hover-opacity" width="500" height="333">
+          <img src="data/research/recherche.jpg" class="w3-round w3-image w3-hover-opacity" width="500" height="333" onclick="onClick(this)" alt="Recherche">
         </div>
         <!-- Hide this text on small devices -->
         <div class="w3-col m6 w3-hide-small w3-padding-large">
@@ -155,7 +175,7 @@
       <div class="w3-row"></div>
         <div class="w3-col m6 w3-left w3-padding-large">
           <a href="empathy.html" class="img" style="text-decoration: none">
-          <img src="data/research/IMG.jpg" class="w3-round w3-image w3-hover-opacity" width="500" height="333">
+          <img src="data/research/IMG.jpg" class="w3-round w3-image w3-hover-opacity" width="500" height="333" onclick="onClick(this)" alt="Empathy">
         </div>
 
         <!-- Hide this text on small devices -->
@@ -183,7 +203,7 @@
       <div class="w3-row"></div>
         <div class="w3-col m6 w3-right w3-padding-large">
           <a href="ideation.html" class="img, margin-top" style="text-decoration: none">
-          <img src="data/ideation/ideation.jpg" class="w3-round w3-image w3-hover-opacity" width="500" height="333">
+          <img src="data/ideation/ideation.jpg" class="w3-round w3-image w3-hover-opacity" width="500" height="333" onclick="onClick(this)" alt="Ideation">
         </div>
         <!-- Hide this text on small devices -->
         <div class="w3-col m6 w3-hide-small w3-padding-small">
@@ -237,7 +257,7 @@
       <div class="w3-row"></div>
         <div class="w3-col m6 w3-left w3-padding-large">
           <a href="prototyp.html" class="img" style="text-decoration: none">
-          <img src="data/prototype/Wireframes2.jpg" class="w3-round w3-image w3-hover-opacity" width="500" height="333">
+          <img src="data/prototype/Wireframes2.jpg" class="w3-round w3-image w3-hover-opacity" width="500" height="333" onclick="onClick(this)" alt="Prototyp Graustufen">
         </div>
 
         <!-- Hide this text on small devices -->
@@ -269,7 +289,7 @@
       <div class="w3-row"></div>
         <div class="w3-col m6 w3-right w3-padding-large">
           <a href="test.html" class="img" style="text-decoration: none">
-          <img src="data/test/test.jpg" class="w3-round w3-image w3-hover-opacity" width="500" height="333">
+          <img src="data/test/test.jpg" class="w3-round w3-image w3-hover-opacity" width="500" height="333" onclick="onClick(this)" alt="Test">
         </div>
 
         <!-- Hide this text on small devices -->
@@ -291,10 +311,7 @@
         </div>
       </div>
     </div>
-
-    <!-- Second Parallax Image with Portfolio Text -->
-    <!-- <div class="bgimg-4 w3-display-container w3-opacity-min"></div> -->
-    <!-- Footer -->
+    
    <footer class="w3-center w3-black w3-padding-32" style="padding-bottom: 0; margin-bottom: 0">
       <div class="w3-xlarge w3-section">
           <p style="font-size: 0.8em; font-weight: 100">Check out our portfolios!</p>
