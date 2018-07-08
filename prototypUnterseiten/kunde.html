@@ -21,7 +21,7 @@
     }
 
     /* Create a Parallax Effect */
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
         background-attachment: fixed;
         /* background-position: center; */
         background-repeat: no-repeat;
@@ -30,26 +30,38 @@
 
     /* First image (Logo. Full height) */
     .bgimg-1 {
-        background-image: url('../data/prototype/3_Kunde/V_3.0/Kunde5.png');
+        background-image: url('../data/prototype/3_Kunde/V_5.0/Kunde5.png');
         min-height: 100%;
     }
 
     /* Second image (Portfolio) */
     .bgimg-2 {
-        background-image: url("data/dreieis.jpeg");
-        min-height: 400px;
+        background-image: url("../data/prototype/3_Kunde/V_1.0/Kunde1.png");
+        min-height: 300px;
     }
 
     /* Third image (Contact) */
     .bgimg-3 {
-        background-image: url("data/schoko.jpg");
-        min-height: 400px;
+        background-image: url("../data/prototype/3_Kunde/V_2.0/Kunde2.png");
+        min-height: 300px;
     }
 
     /* Third image (Contact) */
     .bgimg-4 {
-        background-image: url("data/bunt.jpeg");
-        min-height: 400px;
+        background-image: url("../data/prototype/3_Kunde/V_3.0/Kunde3.png");
+        min-height: 300px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-5 {
+        background-image: url("../data/prototype/3_Kunde/V_3.0/Karte.png");
+        min-height: 300px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-6 {
+        background-image: url("../data/prototype/3_Kunde/V_5.0/Kunde5.1.png");
+        min-height: 300px;
     }
 
     .w3-wide {letter-spacing: 10px;}
@@ -57,7 +69,7 @@
 
     /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1024px) {
-        .bgimg-1, .bgimg-2, .bgimg-3 {
+        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
             background-attachment: scroll;
         }
     }
@@ -140,7 +152,7 @@
       <h3 class="w3-center">ENTWICKLUNG DER VERSIONEN</h3>
       <div class="w3-row"></div>
         <div class="m6 w3-right w3-padding-large">
-          <!--img src="../data/prototype/1_Graustufen/Wireframes.jpeg" class="w3-round w3-image" width="400" height="333" onclick="onClick(this)" alt="Clickdummies in Graustufen"-->
+          <img src="../data/prototype/3_Kunde/Screens_Versionen/Screens_Versionen.jpg" class="w3-round w3-image w3-hover-opacity" width="400" height="333" onclick="onClick(this)" alt="Semantisches Differenzial">
         </div>
 
         <!-- Hide this text on small devices -->
@@ -204,10 +216,13 @@
               <div class="w3-col m3">
                 <img src="../data/prototype/3_Kunde/Screens_Versionen/VergleichVersionen/Screens_Versionen_Doku.069.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
               </div>
-              <div class="w3-col m3">
-                <img src="../data/prototype/3_Kunde/Screens_Versionen/Screens_Versionen.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
-              </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+
+            <div class="bgimg-2 w3-display-container w3-opacity-min"></div>
 
 
 
@@ -216,7 +231,7 @@
       <h3 class="w3-center">VERSION I</h3>
       <div class="w3-row"></div>
         <div class="m6 w3-right w3-padding-large">
-          <!--img src="../data/prototype/1_Graustufen/Wireframes.jpeg" class="w3-round w3-image" width="400" height="333" onclick="onClick(this)" alt="Clickdummies in Graustufen"-->
+            <img src="../data/prototype/3_Kunde/Screens_Versionen/V1/Screens_Versionen_Doku.012.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
         </div>
 
         <!-- Hide this text on small devices -->
@@ -265,26 +280,14 @@
 
             <div class="w3-row-padding w3-center w3-section">
               <div class="w3-col m3">
-                <img src="../data/prototype/3_Kunde/Screens_Versionen/V1/Screens_Versionen_Doku.012.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
-              </div>
-              <div class="w3-col m3">
                 <img src="../data/prototype/3_Kunde/Screens_Versionen/V1/Screens_Versionen_Doku.007.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
-              </div>
-            </div>
-
-            <!-- Modal for full size images on click-->
-            <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-              <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
-                <i class="fa fa-remove"></i>
-              </span>
-              <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent">
-                <p id="caption" class="w3-opacity w3-large"></p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!--Ende Fotogalerie-->
+
+                <div class="bgimg-3 w3-display-container w3-opacity-min"></div>
 
 
       <!-- Container (RECHERCHE Section) -->
@@ -292,8 +295,8 @@
         <h3 class="w3-center">VERSION II</h3>
         <div class="w3-row"></div>
           <div class="m6 w3-right w3-padding-large">
-            <!--img src="../data/prototype/1_Graustufen/Wireframes.jpeg" class="w3-round w3-image" width="400" height="333" onclick="onClick(this)" alt="Clickdummies in Graustufen"-->
-          </div>
+                <img src="../data/prototype/3_Kunde/Screens_Versionen/V2/Screens_Versionen_Doku.023.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            </div>
 
           <!-- Hide this text on small devices -->
           <!--div class="w3-col m6 w3-hide-small w3-padding-large"-->
@@ -341,19 +344,228 @@
 
               <div class="w3-row-padding w3-center w3-section">
                 <div class="w3-col m3">
-                  <img src="../data/prototype/3_Kunde/Screens_Versionen/V2/Screens_Versionen_Doku.023.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
-                </div>
-                <div class="w3-col m3">
                   <img src="../data/prototype/3_Kunde/Screens_Versionen/V2/Screens_Versionen_Doku.018.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
                 </div>
                 <div class="w3-col m3">
-                  <img src="../data/prototype/3_Kunde/Screens_Versionen/V2/Screens_Versionen_Doku.022.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  <img src="../data/prototype/3_Kunde/Screens_Versionen/V2/Screens_Versionen_Doku.022.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Vergleich unterschiedlicher Schriftarten">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Ende Fotogalerie-->
+
+                  <div class="bgimg-4 w3-display-container w3-opacity-min"></div>
+
+        <!-- Container (RECHERCHE Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="research">
+          <h3 class="w3-center">VERSION III</h3>
+          <div class="w3-row"></div>
+            <div class="m6 w3-right w3-padding-large">
+                  <img src="../data/prototype/3_Kunde/Screens_Versionen/V2/Screens_Versionen_Doku.023.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+              </div>
+
+            <!-- Hide this text on small devices -->
+            <!--div class="w3-col m6 w3-hide-small w3-padding-large"-->
+              <p>Die Screens für den Kunden enthalten den ersten Entwurf für den Bestellvorgang eines individuell zusammen gestellten Eis,
+                hierbei war es besonders wichtig auf die Anordnung und die Reihenfolge der Screens für das Bestellen zu achten und sich ebenso über die
+                unterschiedlichen Zahlungsmöglichkeiten Gedanken zu machen. Diese ersten Entwürfe boten eine gute Grundlage für die nachfolgende Ausarbeitung,
+                aber waren natürlich noch stark verbessserungswürdig.<p>
+              <div></div><p>Der Ice-Creamist soll mithilfe der Anwendung EisZeit in seiner Arbeit unterstützt werden und deshalb so einfach wie möglich in der
+                Bedienung aber dafür umso umfangreicher an Funktionen sein. In dem ersten Clickdummy sind ein Screen für die
+                Statistiken der Eissorten, die Übersicht über die Inventur, aber auch die unterschiedlichen Bestellungen eingesehen werden
+                können.</p>
+            </div>
+            <!-- Beginn Fotogalerie -->
+            <div class="w3-content w3-container w3-padding-64" id="portfolio">
+              <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+              <div class="w3-row-padding w3-center w3-section">
+                <div class="w3-col m3">
+                  <img src="../data/prototype/3_Kunde/Screens_Versionen/V3/Screens_Versionen_Doku.030.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                </div>
+                <div class="w3-col m3">
+                    <img src="../data/prototype/3_Kunde/Screens_Versionen/V3/Screens_Versionen_Doku.024.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                </div>
+                <div class="w3-col m3">
+                  <img src="../data/prototype/3_Kunde/Screens_Versionen/V3/Screens_Versionen_Doku.025.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                </div>
+                <div class="w3-col m3">
+                  <img src="../data/prototype/3_Kunde/Screens_Versionen/V3/Screens_Versionen_Doku.026.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
                 </div>
               </div>
 
-        <!--Ende Fotogalerie-->
+                <div class="w3-row-padding w3-center w3-section">
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/3_Kunde/Screens_Versionen/V3/Screens_Versionen_Doku.035.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/3_Kunde/Screens_Versionen/V3/Screens_Versionen_Doku.028.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/3_Kunde/Screens_Versionen/V3/Screens_Versionen_Doku.029.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/3_Kunde/Screens_Versionen/V3/Screens_Versionen_Doku.033.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                </div>
+
+                <div class="w3-row-padding w3-center w3-section">
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/3_Kunde/Screens_Versionen/V3/Screens_Versionen_Doku.027.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/3_Kunde/Screens_Versionen/V3/Screens_Versionen_Doku.034.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Vergleich unterschiedlicher Schriftarten">
+                  </div>
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/3_Kunde/Screens_Versionen/V3/Screens_Versionen_Doku.032.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/3_Kunde/Screens_Versionen/V3/Screens_Versionen_Doku.031.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Vergleich unterschiedlicher Schriftarten">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Ende Fotogalerie-->
+            <div class="bgimg-5 w3-display-container w3-opacity-min"></div>
 
 
+          <!-- Container (RECHERCHE Section) -->
+          <div class="w3-content w3-container w3-padding-64" id="research">
+            <h3 class="w3-center">VERSION IV</h3>
+            <div class="w3-row"></div>
+              <div class="m6 w3-right w3-padding-large">
+                    <img src="../data/prototype/3_Kunde/Screens_Versionen/V4/Screens_Versionen_Doku.045.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                </div>
+
+              <!-- Hide this text on small devices -->
+              <!--div class="w3-col m6 w3-hide-small w3-padding-large"-->
+                <p>Die Screens für den Kunden enthalten den ersten Entwurf für den Bestellvorgang eines individuell zusammen gestellten Eis,
+                  hierbei war es besonders wichtig auf die Anordnung und die Reihenfolge der Screens für das Bestellen zu achten und sich ebenso über die
+                  unterschiedlichen Zahlungsmöglichkeiten Gedanken zu machen. Diese ersten Entwürfe boten eine gute Grundlage für die nachfolgende Ausarbeitung,
+                  aber waren natürlich noch stark verbessserungswürdig.<p>
+                <div></div><p>Der Ice-Creamist soll mithilfe der Anwendung EisZeit in seiner Arbeit unterstützt werden und deshalb so einfach wie möglich in der
+                  Bedienung aber dafür umso umfangreicher an Funktionen sein. In dem ersten Clickdummy sind ein Screen für die
+                  Statistiken der Eissorten, die Übersicht über die Inventur, aber auch die unterschiedlichen Bestellungen eingesehen werden
+                  können.</p>
+              </div>
+              <!-- Beginn Fotogalerie -->
+              <div class="w3-content w3-container w3-padding-64" id="portfolio">
+                <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+                <div class="w3-row-padding w3-center w3-section">
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/3_Kunde/Screens_Versionen/V4/Screens_Versionen_Doku.044.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                      <img src="../data/prototype/3_Kunde/Screens_Versionen/V4/Screens_Versionen_Doku.038.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/3_Kunde/Screens_Versionen/V4/Screens_Versionen_Doku.039.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/3_Kunde/Screens_Versionen/V4/Screens_Versionen_Doku.040.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                </div>
+
+                  <div class="w3-row-padding w3-center w3-section">
+                    <div class="w3-col m3">
+                      <img src="../data/prototype/3_Kunde/Screens_Versionen/V4/Screens_Versionen_Doku.042.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                    </div>
+                    <div class="w3-col m3">
+                      <img src="../data/prototype/3_Kunde/Screens_Versionen/V4/Screens_Versionen_Doku.043.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                    </div>
+                    <div class="w3-col m3">
+                      <img src="../data/prototype/3_Kunde/Screens_Versionen/V4/Screens_Versionen_Doku.037.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                    </div>
+                    <div class="w3-col m3">
+                      <img src="../data/prototype/3_Kunde/Screens_Versionen/V4/Screens_Versionen_Doku.041.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Ende Fotogalerie-->
+
+                        <div class="bgimg-6 w3-display-container w3-opacity-min"></div>
+
+            <!-- Container (RECHERCHE Section) -->
+            <div class="w3-content w3-container w3-padding-64" id="research">
+              <h3 class="w3-center">VERSION V</h3>
+              <div class="w3-row"></div>
+                <div class="m6 w3-right w3-padding-large">
+                      <img src="../data/prototype/3_Kunde/Screens_Versionen/V5/Screens_Versionen_Doku.056.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+
+                <!-- Hide this text on small devices -->
+                <!--div class="w3-col m6 w3-hide-small w3-padding-large"-->
+                  <p>Die Screens für den Kunden enthalten den ersten Entwurf für den Bestellvorgang eines individuell zusammen gestellten Eis,
+                    hierbei war es besonders wichtig auf die Anordnung und die Reihenfolge der Screens für das Bestellen zu achten und sich ebenso über die
+                    unterschiedlichen Zahlungsmöglichkeiten Gedanken zu machen. Diese ersten Entwürfe boten eine gute Grundlage für die nachfolgende Ausarbeitung,
+                    aber waren natürlich noch stark verbessserungswürdig.<p>
+                  <div></div><p>Der Ice-Creamist soll mithilfe der Anwendung EisZeit in seiner Arbeit unterstützt werden und deshalb so einfach wie möglich in der
+                    Bedienung aber dafür umso umfangreicher an Funktionen sein. In dem ersten Clickdummy sind ein Screen für die
+                    Statistiken der Eissorten, die Übersicht über die Inventur, aber auch die unterschiedlichen Bestellungen eingesehen werden
+                    können.</p>
+                </div>
+                <!-- Beginn Fotogalerie -->
+                <div class="w3-content w3-container w3-padding-64" id="portfolio">
+                  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+                  <div class="w3-row-padding w3-center w3-section">
+                    <div class="w3-col m3">
+                      <img src="../data/prototype/3_Kunde/Screens_Versionen/V5/Screens_Versionen_Doku.049.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                    </div>
+                    <div class="w3-col m3">
+                        <img src="../data/prototype/3_Kunde/Screens_Versionen/V5/Screens_Versionen_Doku.046.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                    </div>
+                    <div class="w3-col m3">
+                      <img src="../data/prototype/3_Kunde/Screens_Versionen/V5/Screens_Versionen_Doku.050.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                    </div>
+                    <div class="w3-col m3">
+                      <img src="../data/prototype/3_Kunde/Screens_Versionen/V5/Screens_Versionen_Doku.052.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                    </div>
+                  </div>
+
+                    <div class="w3-row-padding w3-center w3-section">
+                      <div class="w3-col m3">
+                        <img src="../data/prototype/3_Kunde/Screens_Versionen/V5/Screens_Versionen_Doku.053.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                      </div>
+                      <div class="w3-col m3">
+                        <img src="../data/prototype/3_Kunde/Screens_Versionen/V5/Screens_Versionen_Doku.055.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                      </div>
+                      <div class="w3-col m3">
+                        <img src="../data/prototype/3_Kunde/Screens_Versionen/V5/Screens_Versionen_Doku.054.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                      </div>
+                      <div class="w3-col m3">
+                        <img src="../data/prototype/3_Kunde/Screens_Versionen/V5/Screens_Versionen_Doku.048.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                      </div>
+                    </div>
+
+                    <div class="w3-row-padding w3-center w3-section">
+                      <div class="w3-col m3">
+                        <img src="../data/prototype/3_Kunde/Screens_Versionen/V5/Screens_Versionen_Doku.051.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                      </div>
+                      <div class="w3-col m3">
+                        <img src="../data/prototype/3_Kunde/Screens_Versionen/V5/Screens_Versionen_Doku.047.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Vergleich unterschiedlicher Schriftarten">
+                      </div>
+                    </div>
+
+                    <!-- Modal for full size images on click-->
+                    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+                      <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
+                        <i class="fa fa-remove"></i>
+                      </span>
+                      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent">
+                        <p id="caption" class="w3-opacity w3-large"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Ende Fotogalerie-->
+
+          </div>
+        </div>
       </div>
     </div>
 
