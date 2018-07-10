@@ -10,7 +10,7 @@
   <style>
     body,h1,h2,h3, a {font-family: "Quicksand", sans-serif;}
     body,p {font-family: "source sans pro", sans-serif;
-    font-size: 1.1em;}
+          font-size: 1.1em;}
     body, html {
         height: 100%;
         color: #000;
@@ -21,7 +21,7 @@
     }
 
     /* Create a Parallax Effect */
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
         background-attachment: fixed;
         /* background-position: center; */
         background-repeat: no-repeat;
@@ -30,26 +30,38 @@
 
     /* First image (Logo. Full height) */
     .bgimg-1 {
-        background-image: url('data/test/test.jpg');
+        background-image: url('../data/prototype/4_Dealer/v5.1.png');
         min-height: 100%;
     }
 
     /* Second image (Portfolio) */
     .bgimg-2 {
-        background-image: url("data/dreieis.jpeg");
-        min-height: 400px;
+        background-image: url("../data/prototype/4_Dealer/v1.1.png");
+        min-height: 300px;
     }
 
     /* Third image (Contact) */
     .bgimg-3 {
-        background-image: url("data/schoko.jpg");
-        min-height: 400px;
+        background-image: url("../data/prototype/4_Dealer/v2.1.png");
+        min-height: 300px;
     }
 
     /* Third image (Contact) */
     .bgimg-4 {
-        background-image: url("data/bunt.jpeg");
-        min-height: 400px;
+        background-image: url("../data/prototype/4_Dealer/v4.png");
+        min-height: 300px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-5 {
+        background-image: url("../data/prototype/4_Dealer/v5.1.png");
+        min-height: 300px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-6 {
+        background-image: url("../data/prototype/4_Dealer/v5.png");
+        min-height: 300px;
     }
 
     .w3-wide {letter-spacing: 10px;}
@@ -57,7 +69,7 @@
 
     /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1024px) {
-        .bgimg-1, .bgimg-2, .bgimg-3 {
+        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
             background-attachment: scroll;
         }
     }
@@ -111,52 +123,459 @@
         <a href="../ideation.html" class="w3-bar-item w3-button">IDEATION</a>
         <a href="../prototyp.html" class="w3-bar-item w3-button">PROTOTYPE</a>
         <a href="../test.html" class="w3-bar-item w3-button">TESTING</a>
-        <a href="../gallery.html" class="w3-bar-item w3-button">GALLERY</a>  
+        <a href="../gallery.html" class="w3-bar-item w3-button">GALLERY</a>
       </div>
     </div>
 
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container" id="home">
       <div class="w3-display-middle" style="white-space:nowrap;">
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">EisZeit FÜR DEN ICE-CREAMISTEN</span>
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">EisZeit für den Ice-Creamisten</span>
       </div>
-    </div>
-
-    <!-- Container (About Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="home">
-      <h3 class="w3-center">NUTZERTESTS</h3>
-      <!-- <p class="w3-center"><em>I love photography</em></p> -->
-      <p>Die verschiedenen Versionen wurden das Projekt über, den verschiedenen Nutzern gezeigt und
-        von ihnen bewertet, hierfür verwendeten wir verschiedene Methoden. Von einem "Think Aloud" bis zu "Semantischen
-        Differntialen".
-      </p>
     </div>
 
     <!-- Container (RECHERCHE Section) -->
     <div class="w3-content w3-container w3-padding-64" id="research">
-      <h3 class="w3-center">SEMANTISCHES DIFFERENTIAL</h3>
+      <h3 class="w3-center">ENTWICKLUNG DER VERSIONEN</h3>
       <div class="w3-row"></div>
         <div class="m6 w3-right w3-padding-large">
-          <img src="data/test/SemantischesDifferential/DifferentialAuswertungKunde.jpg" class="w3-round w3-image w3-hover-opacity" width="400" height="333" onclick="onClick(this)" alt="Semantisches Differential">
+          <img src="../data/prototype/4_Dealer/Screens_Versionen/VergleichVersionen/Screens_VersionenUebersicht.jpg" class="w3-round w3-image w3-hover-opacity" width="400" height="333" onclick="onClick(this)" alt="Entwicklungs-Matrix">
         </div>
 
         <!-- Hide this text on small devices -->
         <!--div class="w3-col m6 w3-hide-small w3-padding-large"-->
-          <p>Um unsere Anwendungen von der jeweils angedachten Zielgruppe testen und bewerten zu lassen
-          gaben wir Aufgabestellungen zu unseren beiden Clickdummies. Für den Test, der mobilen Kunden-Anwendung
-          sollten die Probanden ein Eis, aus bestimmten Sorten und mit einem Topping bestellen und so hinterher ihr
-          "Erlebnis" sowie die Handhabung der Anwendung bewerten.
-          <br>
-          <div></div>Hierfür entschieden wir uns für ein Semantisches
-          Differential, welches wir selbst erstellten. Nach den Nutzertests werteten wir die Differentiale aus und verglichen
-          sie mit unserem "Ideal", wie wir uns wünschen würden
-          dass unsere Anwendung auf die Nutzer wirkt. Der Vergleich und die Auswertung ergab, dass sich unsere Vorstellung mit der
-          User Experience der Nutzer in den meisten Punkten deckt. An manchen Stellen jedoch wie zum Beispiel der Punkt, wie persönlich
-          die Anwendung wirkt gingen die Meinungen noch auseinander. Durch das Differential war es uns möglich zu erkennen,
-          an welchen Stellen die Anwendung nocheinmal überarbeitet werden sollte.</p>
+          <p>Die Screens wurden so gestaltet um die Probleme des Nutzer so optimal wie möglich zu lösen und wurden auch gemeinsam mit dem Nutzer
+            immer weiter entwickelt.</p>
+          <div></div><p>In der nebenan stehenden Versions-Matrix sind die wichtigsten Screens der wichtigsten fünf Versionen zu sehen.
+            Innerhalb der Darstellung kann man in einer Zeile die Screens aus jeweils der selben Version der Anwednung sehen. Wenn man sich die Spalten
+            ansieht, kann man die Entwicklung des selben Screens nachverfolgen. Bei der neuesten Version (letzte Zeile) sind vermutlich die Unterschiede zu den
+            vorherigen Versionen am deutlichsten zu erkennen. Da wurden nicht nur die Screens überarbeitet, sondern auch die Reienfolge und
+          somit der Flow innerhalb der Anwendung auf die Bedürfnisse des Nutzers angepasst.</p>
+          <div></div><p>
+            In der unten stehenden Fotogalerie haben wir die verschiedenen Versionen der Screens nocheinmal einzeln aufgelistet. So lässt sich die Entwicklung einfach
+            nachverfolgen. So sind auch kleine Veränderungen schnell und deutlich sichtbar. Wie beispielsweise die Wandlung des Fortschrittsbalkens,
+            sonstige Änderungen im Layout wie die Fixierung des "Weiter"-Buttons oder
+            die Tatsache, dass es in der neuesten Version der App kein Hauptmenü mehr gibt, da der Nutzer überhaupt keines benötigt und es die Nutzung
+            der Anwenudung gleichzeitig vereinfacht wenn dieser direkt über die Karte mit dem Eisdielen-Finder bestellt.</p>
+            <div></div><p>
+            Außerdem fällt so auf, dass in Screens wie zum Beispiel "Deine Eiskreation" oder die Übersicht der Eissorten
+            immer mehr Details mit eingearbeitet wurden, aber die Nutzung der Anwenung immer weiter vereinfacht wurde.
+            Weiter unten auf dieser Seite wird jeweils nocheinmal genauer auf die Gestaltung der einzelnen Versionen eingegangen.
+            </p>
+        </div>
+        <!-- Beginn Fotogalerie -->
+        <script>
+          // Modal Image Gallery
+          function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+          }
+        </script>
+
+        <div class="w3-content w3-container w3-padding-64" id="portfolio" style= "margin-top: -7em;">
+          <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+          <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+              <img src="../data/prototype/4_Dealer/Screens_Versionen/VergleichVersionen/Screens_Versionen.049.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            </div>
+            <div class="w3-col m3">
+              <img src="../data/prototype/4_Dealer/Screens_Versionen/VergleichVersionen/Screens_Versionen.050.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            </div>
+            <div class="w3-col m3">
+                <img src="../data/prototype/4_Dealer/Screens_Versionen/VergleichVersionen/Screens_Versionen.051.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            </div>
+            <div class="w3-col m3">
+              <img src="../data/prototype/4_Dealer/Screens_Versionen/VergleichVersionen/Screens_Versionen.052.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            </div>
+          </div>
+
+            <div class="w3-row-padding w3-center w3-section">
+              <div class="w3-col m3">
+                <img src="../data/prototype/4_Dealer/Screens_Versionen/VergleichVersionen/Screens_Versionen.053.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+            <div class="bgimg-2 w3-display-container w3-opacity-min"></div>
+
+
+
+    <!-- Container (RECHERCHE Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="research">
+      <h3 class="w3-center">VERSION I</h3>
+      <div class="m6 w3-right w3-padding-large">
+          <img src="../data/prototype/4_Dealer/Screens_Versionen/V1/Screens_Versionen.013.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+      </div>
+      <div class="w3-row"></div>
+
+
+        <!-- Hide this text on small devices -->
+        <!--div class="w3-col m6 w3-hide-small w3-padding-large"-->
+        <div>
+          <p style= "margin: 1.4em;">
+            Bevor wir damit
+          </p>
+          <div></div><p style= "margin: 1.4em;">
+            Für das Menü sahen
+           </p>
+             <div></div><p style= "margin: 1.4em;">Die
+          </p>
+        </div>
+
+        </div>
+        <!-- Beginn Fotogalerie -->
+        <div class="w3-content w3-container w3-padding-64" id="portfolio" style= "margin-top: -7em;">
+          <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+          <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+              <img src="../data/prototype/4_Dealer/Screens_Versionen/V1/Screens_Versionen.001.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            </div>
+            <div class="w3-col m3">
+                <img src="../data/prototype/4_Dealer/Screens_Versionen/V1/Screens_Versionen.002.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            </div>
+            <div class="w3-col m3">
+              <img src="../data/prototype/4_Dealer/Screens_Versionen/V1/Screens_Versionen.003.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            </div>
+            <div class="w3-col m3">
+              <img src="../data/prototype/4_Dealer/Screens_Versionen/V1/Screens_Versionen.004.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            </div>
+          </div>
+
+            <div class="w3-row-padding w3-center w3-section">
+              <div class="w3-col m3">
+                <img src="../data/prototype/4_Dealer/Screens_Versionen/V1/Screens_Versionen.005.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+              </div>
+              <div class="w3-col m3">
+                <img src="../data/prototype/4_Dealer/Screens_Versionen/V1/Screens_Versionen.006.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+              </div>
+              <div class="w3-col m3">
+                <img src="../data/prototype/4_Dealer/Screens_Versionen/V1/Screens_Versionen.007.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+              </div>
+              <div class="w3-col m3">
+                <img src="../data/prototype/4_Dealer/Screens_Versionen/V1/Screens_Versionen.008.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+              </div>
+            </div>
+
+            <div class="w3-row-padding w3-center w3-section">
+              <div class="w3-col m3">
+                <img src="../data/prototype/4_Dealer/Screens_Versionen/V1/Screens_Versionen.009.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+              </div>
+              <div class="w3-col m3">
+                <img src="../data/prototype/4_Dealer/Screens_Versionen/V1/Screens_Versionen.010.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+              </div>
+              <div class="w3-col m3">
+                <img src="../data/prototype/4_Dealer/Screens_Versionen/V1/Screens_Versionen.011.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+              </div>
+              <div class="w3-col m3">
+                <img src="../data/prototype/4_Dealer/Screens_Versionen/V1/Screens_Versionen.012.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                <div class="bgimg-3 w3-display-container w3-opacity-min"></div>
+
+
+      <!-- Container (RECHERCHE Section) -->
+      <div class="w3-content w3-container w3-padding-64" id="research">
+        <h3 class="w3-center">VERSION II</h3>
+        <div class="m6 w3-right w3-padding-large">
+              <img src="../data/prototype/4_Dealer/Screens_Versionen/V2/Screens_Versionen.023.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+          </div>
+        <div class="w3-row"></div>
+
+
+          <!-- Hide this text on small devices -->
+          <!--div class="w3-col m6 w3-hide-small w3-padding-large"-->
+            <p style= "margin: 1.4em;">
+              In der nächsten Iteration
+            </p>
+            <div></div><p style= "margin: 1.4em;">
+              Besonders auffällig an dieser
+            </p></div>
+            <!-- Beginn Fotogalerie -->
+            <div class="w3-content w3-container w3-padding-64" id="portfolio" style= "margin-top: -7em;">
+              <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+              <div class="w3-row-padding w3-center w3-section">
+                <div class="w3-col m3">
+                  <img src="../data/prototype/4_Dealer/Screens_Versionen/V2/Screens_Versionen.014.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                </div>
+                <div class="w3-col m3">
+                    <img src="../data/prototype/4_Dealer/Screens_Versionen/V2/Screens_Versionen.015.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                </div>
+                <div class="w3-col m3">
+                  <img src="../data/prototype/4_Dealer/Screens_Versionen/V2/Screens_Versionen.016.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                </div>
+                <div class="w3-col m3">
+                  <img src="../data/prototype/4_Dealer/Screens_Versionen/V2/Screens_Versionen.017.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                </div>
+              </div>
+
+                <div class="w3-row-padding w3-center w3-section">
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/4_Dealer/Screens_Versionen/V2/Screens_Versionen.018.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/4_Dealer/Screens_Versionen/V2/Screens_Versionen.019.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/4_Dealer/Screens_Versionen/V2/Screens_Versionen.020.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/4_Dealer/Screens_Versionen/V2/Screens_Versionen.021.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                </div>
+
+                <div class="w3-row-padding w3-center w3-section">
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/4_Dealer/Screens_Versionen/V2/Screens_Versionen.022.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/4_Dealer/Screens_Versionen/V2/Screens_Versionen.024.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Vergleich unterschiedlicher Schriftarten">
+                  </div>
+                </div>
+
+                <div class="w3-row"></div>
+            <div></div><p style= "margin: 1.4em;">
+              Auf dem Bezahlscreen
+            </p>
+          </div>
+
+            </div>
+          </div>
+        </div>
+        <!--Ende Fotogalerie-->
+
+                  <div class="bgimg-4 w3-display-container w3-opacity-min"></div>
+
+        <!-- Container (RECHERCHE Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="research">
+          <h3 class="w3-center">VERSION III</h3>
+          <div class="m6 w3-right w3-padding-large">
+                <img src="../data/prototype/4_Dealer/Screens_Versionen/V3/Screens_Versionen.029.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            </div>
+          <div class="w3-row"></div>
+
+            <!-- Hide this text on small devices -->
+            <!--div class="w3-col m6 w3-hide-small w3-padding-large"-->
+              <p style= "margin: 1.4em;">
+              Die dritte Version </p>
+              <div></div><p style= "margin: 1.4em;">
+              Bei der
+            </p>
+            <div></div>
+            <p style= "margin: 1.4em;">
+            Für die allgemeine
+          </p></div>
+              <!-- Beginn Fotogalerie -->
+              <div class="w3-content w3-container w3-padding-64" id="portfolio" style= "margin-top: -7em;">
+                <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+                <div class="w3-row-padding w3-center w3-section">
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/4_Dealer/Screens_Versionen/V3/Screens_Versionen.025.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                      <img src="../data/prototype/4_Dealer/Screens_Versionen/V3/Screens_Versionen.026.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/4_Dealer/Screens_Versionen/V3/Screens_Versionen.027.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/4_Dealer/Screens_Versionen/V3/Screens_Versionen.028.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                </div>
+
+                  <div class="w3-row-padding w3-center w3-section">
+                    <div class="w3-col m3">
+                      <img src="../data/prototype/4_Dealer/Screens_Versionen/V3/Screens_Versionen.030.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                    </div>
+                  </div>
+
+          <div class="w3-row"></div>
+              <div></div>
+              <p style= "margin: 1.4em;">
+              Im Gesamtbild des </p>
+              <div></div><p style= "margin: 1.4em;">Die
+              </p>
+              <div></div>
+              <p style= "margin: 1.4em;">
+              Der Bewertungsscrenn
+              </p>
+            </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Ende Fotogalerie-->
+            <div class="bgimg-5 w3-display-container w3-opacity-min"></div>
+
+
+          <!-- Container (RECHERCHE Section) -->
+          <div class="w3-content w3-container w3-padding-64" id="research">
+            <h3 class="w3-center">VERSION IV</h3>
+            <div class="m6 w3-right w3-padding-large">
+                  <img src="../data/prototype/4_Dealer/Screens_Versionen/V4/Screens_Versionen.036.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+              </div>
+            <div class="w3-row"></div>
+
+
+              <!-- Hide this text on small devices -->
+              <!--div class="w3-col m6 w3-hide-small w3-padding-large"-->
+                <p style= "margin: 1.4em;">Die Vorletzte
+                </p>
+                <div></div><p style= "margin: 1.4em;">
+                Die Verwendung
+                </p>
+              </div>
+              <!-- Beginn Fotogalerie -->
+              <div class="w3-content w3-container w3-padding-64" id="portfolio" style= "margin-top: -7em;">
+                <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+                <div class="w3-row-padding w3-center w3-section">
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/4_Dealer/Screens_Versionen/V4/Screens_Versionen.031.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                      <img src="../data/prototype/4_Dealer/Screens_Versionen/V4/Screens_Versionen.032.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/4_Dealer/Screens_Versionen/V4/Screens_Versionen.032.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                  <div class="w3-col m3">
+                    <img src="../data/prototype/4_Dealer/Screens_Versionen/V4/Screens_Versionen.034.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                  </div>
+                </div>
+
+                  <div class="w3-row-padding w3-center w3-section">
+                    <div class="w3-col m3">
+                      <img src="../data/prototype/4_Dealer/Screens_Versionen/V4/Screens_Versionen.035.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                    </div>
+
+                  </div>
+                  <div class="w3-row"></div>
+
+                    <!-- Hide this text on small devices -->
+                    <!--div class="w3-col m6 w3-hide-small w3-padding-large"-->
+                      <p style= "margin: 1.4em;">
+                      Für den Screen
+                      </p>
+                      <div></div><p style= "margin: 1.4em;"> Auf
+                      </p>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+
+                        <div class="bgimg-6 w3-display-container w3-opacity-min"></div>
+
+            <!-- Container (RECHERCHE Section) -->
+            <div class="w3-content w3-container w3-padding-64" id="research">
+              <h3 class="w3-center">VERSION V</h3>
+              <div class="m6 w3-right w3-padding-large">
+                    <img src="../data/prototype/4_Dealer/Screens_Versionen/V5/Screens_Versionen.045.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                </div>
+              <div class="w3-row"></div>
+
+                <!-- Hide this text on small devices -->
+                <!--div class="w3-col m6 w3-hide-small w3-padding-large"-->
+                  <p style= "margin: 1.4em;">Die finale </p>
+                  <div></div><p style= "margin: 1.4em;">Um </p>
+                  <div></div><p style= "margin: 1.4em;">Möchte </p>
+                </div>
+                <!-- Beginn Fotogalerie -->
+                <div class="w3-content w3-container w3-padding-64" id="portfolio" style= "margin-top: -7em;">
+                  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+                  <div class="w3-row-padding w3-center w3-section">
+                    <div class="w3-col m3">
+                      <img src="../data/prototype/4_Dealer/Screens_Versionen/V5/Screens_Versionen.038.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                    </div>
+                    <div class="w3-col m3">
+                        <img src="../data/prototype/4_Dealer/Screens_Versionen/V5/Screens_Versionen.039.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                    </div>
+                    <div class="w3-col m3">
+                      <img src="../data/prototype/4_Dealer/Screens_Versionen/V5/Screens_Versionen.040.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                    </div>
+                    <div class="w3-col m3">
+                      <img src="../data/prototype/4_Dealer/Screens_Versionen/V5/Screens_Versionen.041.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                    </div>
+                  </div>
+
+                    <div class="w3-row-padding w3-center w3-section">
+                      <div class="w3-col m3">
+                        <img src="../data/prototype/4_Dealer/Screens_Versionen/V5/Screens_Versionen.042.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                      </div>
+                      <div class="w3-col m3">
+                        <img src="../data/prototype/4_Dealer/Screens_Versionen/V5/Screens_Versionen.043.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                      </div>
+                      <div class="w3-col m3">
+                        <img src="../data/prototype/4_Dealer/Screens_Versionen/V5/Screens_Versionen.044.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+                      </div>
+
+
+
+                      <!-- Modal for full size images on click-->
+                      <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+                        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
+                          <i class="fa fa-remove"></i>
+                        </span>
+                        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent">
+                          <p id="caption" class="w3-opacity w3-large"></p>
+                        </div>
+                      </div>
+                    </div>
+
+                      <div class="w3-row"></div>
+
+                        <!-- Hide this text on small devices -->
+                        <!--div class="w3-col m6 w3-hide-small w3-padding-large"-->
+                        <div></div><p style= "margin: 1.4em;"> Nachdem </p>
+                          <p style= "margin: 1.4em;">Das </p>
+                          <p style= "margin: 1.4em;">
+                          Der folgende Screen, mit der Frage wo man das Eis
+                          </p>
+                          <div></div><p style= "margin: 1.4em;">
+
+                          </p>
+                    </div>
+                </div>
+              </div>
+              <!--Ende Fotogalerie-->
+
+                    <!-- Container (RECHERCHE Section) -->
+                    <div class="w3-content w3-container w3-padding-64" id="research">
+                      <h3 class="w3-center">GELÖSTE PROBLEME</h3>
+                      <div class="m6 w3-right w3-padding-large">
+                            <img src="../data/prototype/Probleme/Endpräsentation_UX.002.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Fotos: https://www.mz-web.de/koethen/marktplatz-in-aken--eiscafé-schroedter--wechselt-den-besitzer-27817304, https://www.gutefrage.net/frage/was-kann-ich-gegen-blasen-an-der-hand-machen">
+                        </div>
+                      <div class="w3-row"></div>
+
+
+                        <!-- Hide this text on small devices -->
+                        <!--div class="w3-col m6 w3-hide-small w3-padding-large"-->
+                          <p style= "margin: 1.4em;">
+                          </p>
+                          <div></div><p style= "margin: 1.4em;">
+                            </p>
+                            <div></div><p style= "margin: 1.4em;">
+                              </p>
+                        </div>
+
+
+
+          </div>
         </div>
       </div>
     </div>
+
 
     <!-- Footer -->
    <footer class="w3-center w3-black" style="padding: 8px 0 8px 0 ; margin-bottom: 0">
@@ -164,15 +583,40 @@
       <div class="w3-xlarge w3-section">
           <p style="font-size: 0.8em; font-weight: 100">Check out our portfolios!</p>
           <a href="http://marinarost.de/" class="img" target="_blank" style="text-decoration: none">
-            <img src="data/contact/Marina.jpeg" class="w3-round w3-image w3-hover-opacity" width="50" height="333">
+            <img src="../data/contact/Marina.jpeg" class="w3-round w3-image w3-hover-opacity" width="50" height="333">
           </a>
           <a href="https://vanessastoeckel.de/" class="img" target="_blank">
-            <img src="data/contact/Vanessa.jpg" class="w3-round w3-image w3-hover-opacity" width="50" height="333">
+            <img src="../data/contact/Vanessa.jpg" class="w3-round w3-image w3-hover-opacity" width="50" height="333">
           </a>
       </div>
     </footer>
 
+    <!-- Add Google Maps -->
     <script>
+    // function myMap()
+    // {
+    //   myCenter=new google.maps.LatLng(41.878114, -87.629798);
+    //   var mapOptions= {
+    //     center:myCenter,
+    //     zoom:12, scrollwheel: false, draggable: false,
+    //     mapTypeId:google.maps.MapTypeId.ROADMAP
+    //   };
+    //   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+    //   var marker = new google.maps.Marker({
+    //     position: myCenter,
+    //   });
+    //   marker.setMap(map);
+    // }
+
+    // // Modal Image Gallery
+    // function onClick(element) {
+    //   document.getElementById("img01").src = element.src;
+    //   document.getElementById("modal01").style.display = "block";
+    //   var captionText = document.getElementById("caption");
+    //   captionText.innerHTML = element.alt;
+    // }
+
     // Change style of navbar on scroll
     window.onscroll = function() {myFunction()};
     function myFunction() {
@@ -187,19 +631,91 @@
     // Used to toggle the menu on small screens when clicking on the menu button
     function toggleFunction() {
       var x = document.getElementById("navDemo");
-      var y = document.getElementById("myNavbar");
-      if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-          y.className += " w3-white";
-      } else {
-          x.className = x.className.replace(" w3-show", "");
-          y.className = y.className.replace(" w3-white", "");
-      }
+        var y = document.getElementById("myNavbar");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            y.className += " w3-white";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            y.className = y.className.replace(" w3-white", "");
+        }
     }
     </script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script> -->
+
+
+  <!-- <div class="w3-content w3-container w3-padding-64" id="skills">
+    <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+    <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+    </div>
+  </div> -->
+
+  <!-- Modal for full size images on click-->
+    <!-- <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div> -->
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <!-- <div class="bgimg-3 w3-display-container">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">SYNTHESE</span>
+      </div>
+    </div> -->
+
+
+    <!-- Container (Contact Section) -->
+    <!-- <div class="w3-content w3-container w3-padding-64" id="synthese">
+      <h3 class="w3-center">SYNTHESE</h3>
+      <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+      <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container"> -->
+          <!-- Add Google Maps -->
+          <!-- <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+        </div>
+        <div class="w3-col m8 w3-panel">
+          <div class="w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
+            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+          </div>
+          <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-button w3-black w3-right w3-section" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </div> -->
+
     <!--
     To use this code on your website, get a free API key from Google.
     Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
     -->
+
   </body>
 </html>
